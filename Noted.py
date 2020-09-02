@@ -14,7 +14,7 @@ def open_file():
     with open (filepath, "r") as input_file:
         text = input_file.read()
         txt_edit.insert(tk.END, text)
-    window.title(f"Noted - {filepath}")
+    #window.title(f"Noted - {filepath}")
 
 #Saving files
 def save_file():
@@ -27,7 +27,7 @@ def save_file():
     with open(filepath, "w") as output_file:
         text = txt_edit.get("1.0", tk.END)
         output_file.write(text)
-    window.title(f"Noted - {filepath}")
+    #window.title(f"Noted - {filepath}")
     
 # Format functions
 # def cut_line
